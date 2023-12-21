@@ -6,6 +6,7 @@
   "author": "Joseph McCleery",
   "license": "MIT",
   "type": "module",
+  "keywords": ["rxdb", "schema", "json", "typescript", "compile", "transpile"],
   "bin": {
     "rxdb-schema-types": "./bin/index.js"
   },
