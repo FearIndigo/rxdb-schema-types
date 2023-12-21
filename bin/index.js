@@ -29,6 +29,10 @@ fs.readdir(schemaPath, function (err, files) {
     }
 
     files.forEach(function (file) {
+        if(path.parse(file).ext !== '.json'){
+            return;
+        }
+        
         compileFromFile(path.join(schemaPath, file)).then((ts) =>
             fs.writeFileSync(path.join(typesPath, `${path.parse(file).name}.d.ts`), ts)
         )
