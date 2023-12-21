@@ -1,0 +1,16 @@
+{
+  "name": "rxdb-schema-types",
+  "version": "1.0.0",
+  "description": "Generate typescript types from RxDB schema.",
+  "main": "bin/index.js",
+  "author": "Joseph McCleery",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "rxdb-schema-types": "./bin/index.js"
+  },
+  "dependencies": {
+    "json-schema-to-typescript": "^13.1.1",
+    "yargs": "^17.7.2"
+  }
+}
